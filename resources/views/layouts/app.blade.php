@@ -18,7 +18,8 @@
     @include('partials.navbar') --}}
 
     {{-- Content utama --}}
-    <main class="container mx-auto p-6">
+    <main> 
+        {{-- tadi ada mx dan padding dan container --}}
         @yield('content')
     </main>
 {{-- 

@@ -11,4 +11,12 @@ class RegistrationController extends Controller
         
         return view('registration');
     }
+// Controller ini punya method index.
+// Fungsinya mengembalikan tampilan (Blade file) bernama registration.blade.php.
+// Jadi saat rute /Registration diakses, halaman resources/views/registration.blade.php yang ditampilkan.
+
+
+
+
+
 }

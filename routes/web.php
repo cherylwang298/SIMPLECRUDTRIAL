@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('Registration', [RegistrationController::class, 'index'])->name('registration');
+//kalau ditulis /Registration, akan panggil registration.blade.php
