@@ -18,13 +18,14 @@
     @include('partials.navbar') --}}
 
     {{-- Content utama --}}
-    <main> 
         {{-- tadi ada mx dan padding dan container --}}
         @yield('content')
-    </main>
+ 
 {{-- 
     Footer
     @include('partials.footer') --}}
+
+    @yield('regSec')
 
 
 </body>

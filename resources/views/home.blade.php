@@ -95,13 +95,7 @@ animation-duration: 50s;
 </head>
 
 @section('content')
-    <body class ="bg-amber-950 m-0 p-0">
-
-    <h1 class="text-4xl font-bold text-blue-600">Hello Tailwind 🚀</h1>
-    <h1 class="text-3xl font-bold text-black">Check H1 tag </h1>
-    <button class="bg-blue-700 text-white rounded-2xl px-2.5 hover:bg-blue-300 py-1.5" onclick="window.location='{{ route('registration') }}'">Register!</button>
-
-
+<div class="wrapperFull w-[100vw] h-[100vh] bg-amber-400">
         <div class ="banner">
 <div class="slider" style="--quantity: 10">
     <div class="item" style="--position: 1"> <img src="{{ asset('assets/picturess/attackDown.png') }}"></div>
@@ -121,7 +115,44 @@ animation-duration: 50s;
             </div>
         </div>
         </div>
+@endsection
 
-    </body>
+@section('regSec')
+<div class="regSec w-[100vw] h-[100vh]">
+  <h1 class="text-4xl font-bold text-blue-600 text-center hover:text-purple-700 hover:cursor-pointer mt-2">Hello Tailwind 🚀</h1>
+
+
+<div class="container flex flex-row w-[80vw] justify-center justify-items-center mx-auto mt-2 gap-3.5">
+<div class="bg-amber-500 w-[40vw] h-auto p-3 text-justify">
+<h1 class="text-2xl text-center text-white font-bold"> Section 1  </h1>
+<p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. A itaque amet tempora velit nulla reiciendis saepe eveniet ipsam, laboriosam dolores ab odio fugiat fugit temporibus. Corrupti illo harum libero animi. sit amet consectetur adipisicing elit. A itaque amet tempora velit nulla reiciendis saepe eveniet ipsam, laboriosam dolores ab odio fugiat fugit temporibus. Corrupti illo harum libero animi.</p>
+</div>
+<div class="bg-blue-500 w-[40vw] p-3 h-auto">
+<h1 class="text-2xl font-bold text-center text-white"> Section 2 </h1>
+<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A itaque amet tempora velit nulla reiciendis saepe eveniet ipsam, laboriosam dolores ab odio fugiat fugit temporibus. Corrupti illo harum libero animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. A itaque amet tempora velit nulla reiciendis saepe eveniet ipsam, laboriosam dolores ab odio fugiat fugit temporibus. Corrupti illo harum libero animi.</p>
+</div>
+</div>
+
+
+<div class="container flex flex-row w-[80vw] justify-center justify-items-center mx-auto my-[2rem] gap-3.5">
+<div class="bg-amber-500 w-[40vw] h-auto p-3 text-justify">
+<h1 class="text-2xl text-center text-white font-bold"> Section 3  </h1>
+<p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. A itaque amet tempora velit nulla reiciendis saepe eveniet ipsam, laboriosam dolores ab odio fugiat fugit temporibus. Corrupti illo harum libero animi. sit amet consectetur adipisicing elit. A itaque amet tempora velit nulla reiciendis saepe eveniet ipsam, laboriosam dolores ab odio fugiat fugit temporibus. Corrupti illo harum libero animi.</p>
+</div>
+<div class="bg-blue-500 w-[40vw] p-3 h-auto">
+<h1 class="text-2xl font-bold text-center text-white"> Section 4 </h1>
+<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A itaque amet tempora velit nulla reiciendis saepe eveniet ipsam, laboriosam dolores ab odio fugiat fugit temporibus. Corrupti illo harum libero animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. A itaque amet tempora velit nulla reiciendis saepe eveniet ipsam, laboriosam dolores ab odio fugiat fugit temporibus. Corrupti illo harum libero animi.</p>
+</div>
+</div>
+
+    <div class="justify-items-center items-center mx-auto flex flex-col mb-3">
+    <h1 class="text-3xl font-bold text-black mb-3">Check Tag </h1>
+    <button class="bg-blue-700 text-white rounded-2xl px-2.5 hover:bg-blue-300 py-1.5" onclick="window.location='{{ route('registration') }}'">Register!</button>
+    </div>
+
+    <marquee class="bg-amber-950 text-white"> check </marquee>
+
+</div>
+
 @endsection
 
