@@ -8,4 +8,8 @@ Route::get('/', function () {
 });
 
 Route::get('Registration', [RegistrationController::class, 'index'])->name('registration');
-//kalau ditulis /Registration, akan panggil registration.blade.php
+//fungsi index: kalau ditulis /Registration, akan panggil registration.blade.php]]
+//->name('registration) itu nama alias biar bisa dipangg9l di file lain
+
+
+Route::post('/register', [RegistrationController::class, 'store'])->name('registration.store');
