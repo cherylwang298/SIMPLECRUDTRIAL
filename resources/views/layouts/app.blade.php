@@ -1,3 +1,5 @@
+{{-- LAYOUT --}}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +28,10 @@
     @include('partials.footer') --}}
 
     @yield('regSec')
+
+
+
+    
 
 
 </body>

@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+{{-- HOME PAGE --}}
+
 @section('title', 'Home Page')
 
 <head>
@@ -147,8 +149,9 @@ animation-duration: 50s;
 
     <div class="justify-items-center items-center mx-auto flex flex-col mb-3">
     <h1 class="text-3xl font-bold text-black mb-3">Check Tag </h1>
-    <button class="bg-blue-700 text-white rounded-2xl px-2.5 hover:bg-blue-300 py-1.5" onclick="window.location='{{ route('registration') }}'">Register!</button>
-    </div>
+    <button class="bg-blue-700 text-white rounded-2xl px-2.5 hover:bg-blue-300 py-1.5 w-[8rem]" onclick="window.location='{{ route('registration') }}'">Register!</button>
+    <button class="mt-3 bg-blue-700 text-white rounded-2xl px-2.5 hover:bg-blue-300 py-1.5 w-[8rem]" onclick="window.location='{{ route('login') }}'">Login</button>
+</div>
 
     <marquee class="bg-amber-950 text-white"> check </marquee>
 
